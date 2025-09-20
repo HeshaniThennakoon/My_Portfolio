@@ -64,6 +64,8 @@
 .mywork-showmore:hover{
     gap: 30px;
     transition: 0.6s;
+    transform: scale(1.10);
+    box-shadow: 0 0 20px #e72dce, 0 0 30px #18a2a7;
 }
 
 
