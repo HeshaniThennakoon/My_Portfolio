@@ -8,7 +8,7 @@ import { FaWhatsapp, FaLinkedin, FaFacebook } from "react-icons/fa";
 
 const Contact = () => {
     return (
-        <div className="contact">
+        <div id="Contact" name="Contact" className="contact">
             <div className="contact-title">
                 <img src={theme_pattern} alt="" />
                 <h1>Get in touch</h1>
