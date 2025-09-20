@@ -1,17 +1,25 @@
-import React from "react";
+import React, {useState} from "react";
 import "./Navbar.css";
 import logo from "../../assets/logo.png";
 
 const Navbar = () => {
+    const [active, setActive] = useState("Home");
+
+    const menuItems = ["Home", "About Me", "Services", "Portfolio", "Blog", "Contact"];
+
     return (
         <div className="navbar">
             <img src={logo} alt="Logo" className="logo" />
             <ul className="nav-menu">
-                <li>Home</li>
-                <li>About Me</li>
-                <li>Services</li>
-                <li>Portfolio</li>
-                <li>Contact</li>
+                {menuItems.map((item) => (
+                    <li 
+                        key={item} 
+                        className={active === item ? "active" : ""} 
+                        onClick={() => setActive(item)}
+                    >
+                        {item}
+                    </li>
+                ))}
             </ul>
             <div className="nav-connect">Connect with Me</div>
         </div>

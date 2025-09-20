@@ -13,8 +13,34 @@
     font-size: 20px;
 }
 
+.nav-menu li {
+    position: relative;
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+
+.nav-menu li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: #18a2a7;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-menu li:hover::after {
+    width: 100%;
+}
+
+.nav-menu li.active::after {
+    width: 100%;
+    background: #e72dce; /* Different color for active if you like */
+}
+
 .logo {
-    height: 100px;
+    height: 120px;
     width: auto;
     max-width: 100%;
 }
@@ -29,7 +55,9 @@
 }
 
 .nav-connect:hover{
-    transform: scale(1.05);
+    transform: scale(1.10);
+    transition: 0.3s;
+    box-shadow: 0 0 20px #e72dce, 0 0 30px #18a2a7;
 }
 
 
