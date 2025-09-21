@@ -82,3 +82,45 @@
     width: 50px;
     height: auto;
 }
+
+@media (max-width: 768px){
+    .services{
+        margin: 20px 70px;
+        gap: 70px;
+        align-items: start;
+    }
+
+    .services-title h1{
+        font-size: 50px;
+        padding: 0;
+    }
+
+    .services-title img{
+        width: 70px;
+        height: auto;
+    }
+
+    .services-container{
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .services-format{
+        padding: 32px;
+        gap: 20px;
+    }
+
+    .services-format h2{
+        font-size: 28px;
+    }
+
+    .services-format p{
+        font-size: 18px;
+        max-width: 300px;
+        line-height: 32px;
+    }
+
+    .services-readmore img{
+        width: 30px;
+    }
+}

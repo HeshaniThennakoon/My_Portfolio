@@ -52,6 +52,7 @@
     font-size: 22px;
     cursor: pointer;
     transition: 0.5s;
+    white-space: nowrap;
 }
 
 .nav-connect:hover{
@@ -60,19 +61,63 @@
     box-shadow: 0 0 20px #e72dce, 0 0 30px #18a2a7;
 }
 
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 999;
+}
 
 
 
+@media (max-width: 992px) {
+  .navbar {
+    margin: 20px 50px;
+  }
 
+  .nav-menu {
+    gap: 30px;
+    font-size: 18px;
+    right: 20px;
+  }
+}
 
 @media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 80px;
+        left: auto;
+        right: 20px;
+        width: 200px;
+        background: black;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 22px;
+        padding: 20px;
+        display: none;
+        border-radius: 10px;
+        box-shadow: 0 0 20px #e72dce, 0 0 30px #18a2a7;
+    }
+
+    .nav-menu.open {
+        display: flex;
+    }
+
+    .nav-connect {
+        display: none;
+    } 
+
     .logo {
-        height: 40px;
+        height: 60px;
     }
 }
 
 @media (max-width: 480px) {
     .logo {
-        height: 30px;
+        height: 40px;
     }
 }

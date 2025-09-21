@@ -16,7 +16,7 @@
 .hero h1 {
     text-align: center;
     width: 70%;
-    font-size: 90px;
+    font-size: 84px;
     font-weight: 600;
 }
 
@@ -62,4 +62,41 @@
 }
 .hero-resume:hover{
     border-color: #e72dce;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 40px;
+        width: 90%;
+        margin-top: 50px;
+    }
+
+    .hero p{
+        width: 60%;
+        font-size: 18px;
+        line-height: 32px;
+        margin: 10px 0px;
+    }
+
+    .hero img {
+        width: 260px;
+        margin-top: 120px;
+    }
+
+    .hero-action{
+        font-weight: 500;
+        gap: 16px;
+        font-size: 18px;
+        margin-bottom: 50px;
+    }
+
+    .hero-connect{
+        padding: 20px 30px;
+        border-radius: 40px;
+    }
+
+    .hero-resume{
+        padding: 20px 50px;
+        border-radius: 40px;
+    }
 }

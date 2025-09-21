@@ -20,7 +20,7 @@ const Hero = () => {
                 Connect with Me
           </Link>
           
-          <div className="hero-resume">My resume</div>
+          <div className="hero-resume">My Resume</div>
         </div>
     </div>
   )

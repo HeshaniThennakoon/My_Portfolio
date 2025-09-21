@@ -75,3 +75,56 @@
     transition: 0.3s;
     box-shadow: 0 0 20px #e72dce, 0 0 30px #18a2a7;
 }
+
+.footer hr {
+    border: none;
+    border-top: 3px solid #555; /* gives a visible line */
+    margin: 20px 0;             /* spacing around line */
+    width: 100%;                /* ensures full width */
+}
+
+@media (max-width: 768px){
+    .footer{
+        margin: 50px 70px;
+        gap: 50px;
+        align-items: start;
+    }
+
+    .footer-top{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .footer-top-left img{
+        height: 90px;
+    }
+
+    .footer-top-left{
+        gap: 80px;
+    }
+
+    .footer-top-left p{
+        font-size: 19px;
+        max-width: 100%;}
+
+    .footer-email-input{
+        padding-right: 20px;
+    }
+
+    .footer-subscribe{
+        padding: 15px 50px;
+        font-size: 20px;
+    }
+
+    .footer-bottom{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-bottom-left {
+    margin-bottom: 40px;
+    }
+
+}
